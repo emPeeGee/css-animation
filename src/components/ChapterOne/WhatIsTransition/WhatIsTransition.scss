@@ -1,0 +1,17 @@
+.WhatIsTransition {
+  button {
+    height: 90px;
+    width: 300px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    transition: background-color 2s ease-in-out, color 1s ease 2s, width 1s ease 3s;
+  }
+
+  button:hover {
+    width: 600px;
+    background-color: green;
+    color: black;
+  }
+}

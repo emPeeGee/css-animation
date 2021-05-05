@@ -1,0 +1,19 @@
+.Transform {
+  height: 100vh;
+
+  img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    transition: transform 1s;
+  }
+
+  & img {
+    transform-origin: top center;
+  }
+
+  img:hover {
+    transform: rotate(30deg);
+  }
+}
