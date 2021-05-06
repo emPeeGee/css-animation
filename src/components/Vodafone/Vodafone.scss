@@ -1,0 +1,36 @@
+.Vodafone {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #eb2929;
+
+  // animation: vodafone 0s 1 1.05s forwards;
+
+  & img {
+    animation: enter 2s 1;
+  }
+}
+
+@keyframes vodafone {
+  0% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes enter {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(100);
+  }
+}
