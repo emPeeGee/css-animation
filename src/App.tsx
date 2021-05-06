@@ -7,6 +7,7 @@ import { WhatIsTransition } from './components/ChapterOne/WhatIsTransition/WhatI
 
 import './App.scss';
 import { ChapterOne } from './components/ChapterOne/ChapterOne';
+import { Buttons } from './components/Buttons/Buttons';
 function App() {
   return (
     <div className="App">
@@ -25,7 +26,7 @@ function App() {
 
           <Switch>
             <Route path="/buttons">
-              <h1>Button's effects</h1>
+              <Buttons />
             </Route>
             <Route path="/">
               <ChapterOne />
