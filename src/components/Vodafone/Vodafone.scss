@@ -9,10 +9,12 @@
 
   background-color: #eb2929;
 
-  // animation: vodafone 0s 1 1.05s forwards;
+  animation: vodafone 0s 1 3.55s forwards;
 
   & img {
-    animation: enter 2s 1;
+    width: 160px;
+
+    animation: enter 2.5s 1 2s;
   }
 }
 
