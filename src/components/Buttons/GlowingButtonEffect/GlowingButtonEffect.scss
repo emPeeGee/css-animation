@@ -1,0 +1,47 @@
+.GlowingButtonEffect {
+  height: 400px;
+  background-color: #222;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      position: relative;
+      padding: 40px 80px;
+      border: 3px solid white;
+      overflow: hidden;
+
+      font-family: sans-serif;
+      text-decoration: none;
+      font-size: 45px;
+      color: white;
+      letter-spacing: 2px;
+
+      transition: all 0.3s;
+    }
+
+    a::before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+
+      transition: all 0.3s;
+      transform: translateX(-100%) rotate(45deg);
+    }
+
+    a:hover {
+      background-color: #f44336;
+    }
+
+    a:hover::before {
+      transform: translateX(100%) rotate(45deg);
+    }
+  }
+}

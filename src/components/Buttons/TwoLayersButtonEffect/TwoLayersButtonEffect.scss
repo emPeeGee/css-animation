@@ -1,0 +1,68 @@
+.TwoLayersButtonEffect {
+  height: 100vh;
+  background-color: #222;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      position: relative;
+      padding: 40px 80px;
+      border: 3px solid white;
+      overflow: hidden;
+
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      font-size: 45px;
+      color: transparent;
+      letter-spacing: 2px;
+
+      transition: all 0.3s;
+    }
+
+    a::before {
+      content: 'Hover me!';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: #fffa65;
+
+      color: #262626;
+
+      transition: all 0.8s;
+    }
+
+    a::after {
+      content: 'Hover me!';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: #fffa65;
+
+      color: #262626;
+
+      transition: all 0.8s;
+      transform: translate(-100%, 100%);
+    }
+
+    a:hover::before {
+      transform: translate(100%, -100%);
+    }
+    a:hover::after {
+      transform: translate(0%, 0%);
+    }
+  }
+}
