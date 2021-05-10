@@ -1,0 +1,73 @@
+.RotatingThreeLayersButtonEffect {
+  height: 400px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      position: relative;
+
+      padding: 40px 80px;
+      background-color: #f1c40f;
+
+      font-size: 45px;
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: white;
+
+      transition: all 1s;
+    }
+
+    // a:hover {
+    //   color: white;
+    // }
+
+    a::before {
+      content: 'Button';
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      background-color: #2ce771;
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: transform 1s;
+      transform-origin: top;
+      transform: rotateX(270deg);
+    }
+
+    a::after {
+      content: 'Button';
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      background-color: red;
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: transform 1s;
+      transition-delay: 0.25s;
+      transform-origin: top;
+
+      transform: rotateX(270deg);
+    }
+
+    a:hover::before,
+    a:hover::after {
+      transform: rotateX(0deg);
+    }
+  }
+}

@@ -6,6 +6,7 @@ import { Buttons } from './components/Buttons/Buttons';
 import { Vodafone } from './components/Vodafone/Vodafone';
 
 import './App.scss';
+
 function App() {
   return (
     <div className="App">
