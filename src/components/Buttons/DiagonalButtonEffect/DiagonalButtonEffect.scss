@@ -1,0 +1,87 @@
+.DiagonalButtonEffect {
+  height: 400px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    position: relative;
+
+    a {
+      position: absolute;
+      width: 300px;
+      height: 100px;
+      background-color: white;
+      border: 4px solid #250e74;
+      overflow: hidden;
+
+      font-family: sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 20px;
+      line-height: 100px;
+      color: #250e74;
+      letter-spacing: 3px;
+
+      z-index: 0;
+
+      transition: all 0.5s;
+    }
+
+    a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      border-top: 50px solid #250e74;
+      border-bottom: 50px solid #250e74;
+      border-right: 50px solid transparent;
+      border-collapse: collapse;
+      z-index: -1;
+
+      transition: all 0.8s;
+
+      transform: translateX(-100%);
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      border-top: 50px solid #250e74;
+      border-bottom: 50px solid #250e74;
+      border-left: 50px solid transparent;
+      border-collapse: collapse;
+      z-index: -1;
+
+      transition: all 0.8s;
+
+      transform: translateX(100%);
+    }
+
+    a:active {
+      transform: translateY(-100px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    a:hover::before,
+    a:hover::after {
+      transform: translateX(0%);
+    }
+  }
+}
