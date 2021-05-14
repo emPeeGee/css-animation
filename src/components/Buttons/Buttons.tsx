@@ -18,6 +18,7 @@ import { SwipeButtonEffect } from './SwipeButtonEffect/SwipeButtonEffect';
 import { SwipeButtonTextEffect } from './SwipeButtonTextEffect/SwipeButtonTextEffect';
 import { ThreeCirclesButtonEffect } from './ThreeCirclesButtonEffect/ThreeCirclesButtonEffect';
 import { TwoLayersButtonEffect } from './TwoLayersButtonEffect/TwoLayersButtonEffect';
+import { WavyButtonEffect } from './WavyButtonEffect/WavyButtonEffect';
 
 export function Buttons() {
   return (
@@ -41,6 +42,7 @@ export function Buttons() {
       <BorderGrowingButtonEffect />
       <LetterRotatingButtonEffect />
       <FourBorderGrowingButtonEffect />
+      <WavyButtonEffect />
     </div>
   );
 }
