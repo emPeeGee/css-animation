@@ -1,0 +1,71 @@
+.SkewPartsButtonEffect {
+  height: 400px;
+  background-color: #10ac84;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    a {
+      position: relative;
+      padding: 20px 40px;
+      background-color: transparent;
+
+      font-family: sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 25px;
+      color: white;
+      letter-spacing: 7px;
+
+      z-index: 0;
+
+      transition: all 0.3s;
+    }
+
+    a::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -1%;
+
+      width: 50%;
+      height: 100%;
+      background-color: #ee5254;
+      z-index: -1;
+
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transform: skewX(30deg);
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 51%;
+
+      width: 50%;
+      height: 100%;
+      background-color: #0a3d62;
+      z-index: -1;
+
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transform: skewX(30deg);
+    }
+
+    a:hover::before {
+      transform: skewX(0deg);
+      left: 50%;
+      top: 0;
+    }
+
+    a:hover::after {
+      transform: skewX(0deg);
+      left: 0%;
+      top: 0px;
+    }
+  }
+}

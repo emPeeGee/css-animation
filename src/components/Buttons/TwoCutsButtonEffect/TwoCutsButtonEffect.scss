@@ -1,0 +1,63 @@
+.TwoCutsButtonEffect {
+  height: 400px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      position: relative;
+      padding: 40px 80px;
+      overflow: hidden;
+
+      font-family: sans-serif;
+      text-decoration: none;
+      font-size: 45px;
+      color: black;
+      letter-spacing: 2px;
+
+      z-index: 0;
+
+      transition: all 0.3s;
+    }
+
+    a span {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      background-color: transparent;
+      border: 2px solid black;
+
+      z-index: -1;
+    }
+
+    a span::before {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 8%;
+      height: 500%;
+      background-color: white;
+
+      transition: all 0.5s;
+      transform: translate(-50%, -50%) rotate(-60deg);
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    a:hover span:before {
+      width: 100%;
+      background-color: black;
+      transform: translate(-50%, -50%) rotate(60deg);
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.PulsingButtonEffect {
+  height: 400px;
+  background-color: #10ac84;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    position: relative;
+
+    a {
+      position: absolute;
+      padding: 25px 50px;
+      background-color: white;
+      border-radius: 100px;
+
+      font-family: sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 25px;
+      color: #777;
+      letter-spacing: 3px;
+
+      z-index: 0;
+
+      transition: all 0.5s;
+    }
+
+    a::before {
+      content: '';
+      position: absolute;
+      top: -0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border-radius: 100px;
+
+      z-index: -1;
+
+      transition: all 0.4s;
+    }
+
+    a:active {
+      transform: translateY(-100px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    a:hover::before {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}
