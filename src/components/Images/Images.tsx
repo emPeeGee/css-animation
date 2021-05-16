@@ -1,6 +1,7 @@
 import React from 'react';
 import { DiagonalSwipeImageEffect } from './DiagonalSwipeImageEffect/DiagonalSwipeImageEffect';
 import { FadeInImageEffect } from './FadeInImageEffect/FadeInImageEffect';
+import { FadeInSecondImageEffect } from './FadeInSecondImageEffect/FadeInSecondImageEffect';
 import { GoUpImageEffect } from './GoUpImageEffect/GoUpImageEffect';
 import { HideRotatingImageEffect } from './HideRotatingImageEffect/HideRotatingImageEffect';
 import { HoverImageEffect } from './HoverImageEffect/HoverImageEffect';
@@ -25,6 +26,7 @@ export function Images() {
       <RotatingSwipeImageEffect />
       <HideRotatingImageEffect />
       <FadeInImageEffect />
+      <FadeInSecondImageEffect />
     </div>
   );
 }
