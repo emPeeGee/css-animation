@@ -6,6 +6,7 @@ import { Buttons } from './components/Buttons/Buttons';
 import { Vodafone } from './components/Vodafone/Vodafone';
 
 import './App.scss';
+import { Images } from './components/Images/Images';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
               <li>
                 <Link to="/vodafone">Vodafone</Link>
               </li>
+              <li>
+                <Link to="/images">Images</Link>
+              </li>
             </ul>
           </nav>
 
@@ -32,6 +36,9 @@ function App() {
             </Route>
             <Route path="/vodafone">
               <Vodafone />
+            </Route>
+            <Route path="/images">
+              <Images />
             </Route>
             <Route path="/">
               <ChapterOne />
