@@ -10,7 +10,7 @@ export function DiagonalButtonEffect() {
       </h2>
 
       <div className="container">
-        <a>Hover Me</a>
+        <a href="#DiagonalButtonEffect">Hover Me</a>
       </div>
     </div>
   );

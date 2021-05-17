@@ -1,0 +1,82 @@
+.BackgroundBorderMenu {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    & li {
+      list-style: none;
+
+      & a {
+        position: relative;
+        display: block;
+
+        padding: 15px 35px;
+        margin: 0 10px;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 22px;
+        color: #272727;
+
+        transition: all 0.5s;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+          width: 15px;
+          height: 15px;
+          border: 3px solid #e91e63;
+          border-width: 0 0 3px 3px;
+          opacity: 0;
+
+          transition: all 0.5s;
+          transform-origin: left;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          width: 15px;
+          height: 15px;
+          border: 3px solid #e91e63;
+          border-width: 3px 3px 0 0;
+          opacity: 0;
+
+          transition: all 0.5s;
+          transform-origin: left;
+        }
+
+        &:hover {
+          background-color: #e91e63;
+          color: white;
+        }
+
+        &:hover::before {
+          opacity: 1;
+          bottom: -8px;
+          left: -8px;
+        }
+
+        &:hover::after {
+          opacity: 1;
+          top: -8px;
+          right: -8px;
+        }
+      }
+    }
+  }
+}
