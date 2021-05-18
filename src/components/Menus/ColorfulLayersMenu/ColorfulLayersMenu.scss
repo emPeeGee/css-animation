@@ -1,0 +1,61 @@
+.ColorfulLayersMenu {
+  height: 100vh;
+  background-color: #272727;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    // display: flex;
+    // flex-wrap: wrap;
+
+    & li {
+      list-style: none;
+
+      & a {
+        position: relative;
+        display: block;
+
+        -webkit-text-stroke: 1px white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 90px;
+        font-weight: 800;
+        color: #222;
+
+        transition: all 0.5s;
+
+        &::before,
+        &::after {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          transition: all 0.5s;
+        }
+
+        &:hover {
+          color: white;
+          -webkit-text-stroke: 1px black;
+        }
+
+        &:hover::before {
+          color: rgb(187, 0, 0);
+          z-index: 1;
+          -webkit-text-stroke: 1px black;
+          transform: translate(10px, -10px);
+        }
+        &:hover::after {
+          color: rgb(119, 239, 255);
+          z-index: 2;
+          -webkit-text-stroke: 1px black;
+          transform: translate(20px, -20px);
+        }
+      }
+    }
+  }
+}

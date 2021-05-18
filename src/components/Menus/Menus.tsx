@@ -3,8 +3,10 @@ import { BackgroundBorderMenu } from './BackgroundBorderMenu/BackgroundBorderMen
 import { BackgroundTwoBordersMenu } from './BackgroundTwoBordersMenu/BackgroundTwoBordersMenu';
 import { BlurryMenu } from './BlurryMenu/BlurryMenu';
 import { BorderSniperMenu } from './BorderSniperMenu/BorderSniperMenu';
+import { ColorfulLayersMenu } from './ColorfulLayersMenu/ColorfulLayersMenu';
 import { GrowingBordersMenu } from './GrowingBordersMenu/GrowingBordersMenu';
 import { MovingBordersMenu } from './MovingBordersMenu/MovingBordersMenu';
+import { RotatingBorderMenu } from './RotatingBorderMenu/RotatingBorderMenu';
 import { SplittedBackgroundMenu } from './SplittedBackgroundMenu/SplittedBackgroundMenu';
 import { TwoSpanMenu } from './TwoSpanMenu/TwoSpanMenu';
 
@@ -19,6 +21,8 @@ export function Menus() {
       <TwoSpanMenu />
       <BackgroundTwoBordersMenu />
       <BorderSniperMenu />
+      <RotatingBorderMenu />
+      <ColorfulLayersMenu />
     </div>
   );
 }

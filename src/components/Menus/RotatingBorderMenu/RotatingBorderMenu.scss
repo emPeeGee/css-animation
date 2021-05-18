@@ -1,0 +1,75 @@
+.RotatingBorderMenu {
+  height: 100vh;
+  background-color: #272727;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    & li {
+      list-style: none;
+
+      & a {
+        position: relative;
+        display: block;
+
+        padding: 15px 35px;
+        margin: 0 10px;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 22px;
+        color: white;
+
+        transition: all 0.5s;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          border-top: 2px solid #e91e63;
+          border-left: 2px solid #e91e63;
+
+          transition: all 0.5s;
+          transform-origin: left;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+
+          box-sizing: border-box;
+
+          width: 100%;
+          height: 100%;
+          border-bottom: 2px solid #e91e63;
+          border-right: 2px solid #e91e63;
+
+          transition: all 0.5s;
+          transform-origin: right;
+        }
+
+        &:hover::before,
+        &:hover::after {
+          width: 15px;
+          height: 15px;
+
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}

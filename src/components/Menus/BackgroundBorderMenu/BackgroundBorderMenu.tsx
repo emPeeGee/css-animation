@@ -8,19 +8,19 @@ export function BackgroundBorderMenu() {
       <div className="container">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#BackgroundBorderMenu">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#BackgroundBorderMenu">About</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#BackgroundBorderMenu">Services</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a href="#BackgroundBorderMenu">Portfolio</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#BackgroundBorderMenu">Contact</a>
           </li>
         </ul>
       </div>
