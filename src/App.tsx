@@ -8,6 +8,7 @@ import { Vodafone } from './components/Vodafone/Vodafone';
 import './App.scss';
 import { Images } from './components/Images/Images';
 import { Menus } from './components/Menus/Menus';
+import { Cards } from './components/Cards/Cards';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
               <li>
                 <Link to="/menus">Menus</Link>
               </li>
+              <li>
+                <Link to="/cards">Cards</Link>
+              </li>
             </ul>
           </nav>
 
@@ -46,6 +50,9 @@ function App() {
             </Route>
             <Route path="/menus">
               <Menus />
+            </Route>
+            <Route path="/cards">
+              <Cards />
             </Route>
             <Route path="/">
               <ChapterOne />
