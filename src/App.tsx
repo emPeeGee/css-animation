@@ -1,12 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import { ChapterOne } from './components/ChapterOne/ChapterOne';
-import { Buttons } from './components/Buttons/Buttons';
-import { Vodafone } from './components/Vodafone/Vodafone';
-
 import './App.scss';
-import { Images } from './components/Images/Images';
+import CssAnimations from './pages/CssAnimations/CssAnimations';
+import { Home } from './pages/Home/Home';
+import JsAnimations from './pages/JsAnimations/JsAnimations';
 
 function App() {
   return (
@@ -16,33 +14,21 @@ function App() {
           <nav>
             <ul>
               <li>
-                <Link to="/">Chapter One</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/buttons">Buttons</Link>
+                <Link to="/css">Css Animations</Link>
               </li>
               <li>
-                <Link to="/vodafone">Vodafone</Link>
-              </li>
-              <li>
-                <Link to="/images">Images</Link>
+                <Link to="/js">Js Animations</Link>
               </li>
             </ul>
           </nav>
 
           <Switch>
-            <Route path="/buttons">
-              <Buttons />
-            </Route>
-            <Route path="/vodafone">
-              <Vodafone />
-            </Route>
-            <Route path="/images">
-              <Images />
-            </Route>
-            <Route path="/">
-              <ChapterOne />
-            </Route>
+            <Route path="/css" component={CssAnimations} />
+            <Route path="/js" component={JsAnimations} />
+            <Route path="/" exact component={Home} />
           </Switch>
         </div>
       </Router>
