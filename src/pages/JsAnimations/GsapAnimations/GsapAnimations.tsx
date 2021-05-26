@@ -1,0 +1,37 @@
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from 'react-router-dom';
+import { ScrollTriggerBasic } from './ScrollTriggerBasic/ScrollTriggerBasic';
+
+// import './GsapAnimations.scss';
+
+function GsapAnimations() {
+  const { path, url } = useRouteMatch();
+
+  return (
+    <div className="GsapAnimations">
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to={`${url}/scroll-trigger-basic`}>Scroll Trigger Basic Animation</Link>
+              </li>
+              <li>
+                <Link to={`${url}/scroll-trigger-basic`}>Scroll Trigger Basic Animation</Link>
+              </li>
+              <li>
+                <Link to={`${url}/scroll-trigger-basic`}>Scroll Trigger Basic Animation</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Switch>
+            <Route path={`${path}/scroll-trigger-basic`} component={ScrollTriggerBasic} />
+          </Switch>
+        </div>
+      </Router>
+    </div>
+  );
+}
+
+export default GsapAnimations;

@@ -1,10 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { gsap } from 'gsap';
+import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import './App.scss';
 import CssAnimations from './pages/CssAnimations/CssAnimations';
 import { Home } from './pages/Home/Home';
 import JsAnimations from './pages/JsAnimations/JsAnimations';
+
+import './App.scss';
+
+gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
 
 function App() {
   return (
