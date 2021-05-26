@@ -1,0 +1,75 @@
+.SplittedBackgroundMenu {
+  height: 100vh;
+  background-color: #fffa65;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    & li {
+      list-style: none;
+
+      & a {
+        position: relative;
+        display: block;
+
+        width: 120px;
+        height: 50px;
+        padding: 10px 15px;
+        margin: 0 10px;
+
+        text-decoration: none;
+        text-align: center;
+        font-size: 22px;
+        line-height: 50px;
+        color: #262626;
+
+        z-index: 0;
+        transition: all 0.2s;
+
+        & span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 25%;
+          height: 100%;
+          background-color: #262626;
+          z-index: -1;
+
+          transition: all 0.3s;
+          transform: scaleY(0);
+          transform-origin: top;
+        }
+
+        & span:nth-child(2) {
+          left: 25%;
+          transition-delay: 0.1s;
+        }
+
+        & span:nth-child(3) {
+          left: 50%;
+          transition-delay: 0.2s;
+        }
+
+        & span:nth-child(4) {
+          left: 75%;
+          transition-delay: 0.3s;
+        }
+
+        &:hover {
+          color: white;
+        }
+
+        &:hover span {
+          transform: scaleY(1);
+        }
+      }
+    }
+  }
+}
