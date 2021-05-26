@@ -6,13 +6,13 @@ import './HideRotatingImageEffect.scss';
 
 export function HideRotatingImageEffect() {
   return (
-    <div className="HideRotatingImageEffect">
+    <div id="HideRotatingImageEffect" className="HideRotatingImageEffect">
       <div className="container">
         <img src={ulmo} alt="effect" />
         <div className="HideRotatingImageEffect__caption">
           <h3>Amazing caption</h3>
           <p>Write anything you want</p>
-          <a href="#">Read More</a>
+          <a href="#HideRotatingImageEffect">Read More</a>
         </div>
       </div>
     </div>

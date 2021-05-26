@@ -10,7 +10,7 @@ export function HoverSecondButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">Hover Button Effect</a>
+        <a href="#HoverSecondButtonEffect">Hover Button Effect</a>
       </div>
     </div>
   );

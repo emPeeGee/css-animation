@@ -10,7 +10,7 @@ export function TwoLayersButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">Hover Me</a>
+        <a href="#TwoLayersButtonEffect">Hover Me</a>
       </div>
     </div>
   );

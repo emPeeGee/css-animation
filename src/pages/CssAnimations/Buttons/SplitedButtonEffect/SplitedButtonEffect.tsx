@@ -10,7 +10,7 @@ export function SplitedButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">
+        <a href="#SplitedButtonEffect">
           <span>Hover Me</span>
         </a>
       </div>

@@ -10,7 +10,7 @@ export function SwapingLeftRightButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">Hover Me</a>
+        <a href="#SwapingLeftRightButtonEffect">Hover Me</a>
       </div>
     </div>
   );

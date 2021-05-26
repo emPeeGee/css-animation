@@ -10,7 +10,7 @@ export function SwipeButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">Hover Me</a>
+        <a href="#SwipeButtonEffect">Hover Me</a>
       </div>
     </div>
   );

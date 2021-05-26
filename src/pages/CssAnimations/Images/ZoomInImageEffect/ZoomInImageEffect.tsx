@@ -6,9 +6,9 @@ import './ZoomInImageEffect.scss';
 
 export function ZoomInImageEffect() {
   return (
-    <div className="ZoomInImageEffect">
+    <div id="ZoomInImageEffect" className="ZoomInImageEffect">
       <div className="container">
-        <img src={ulmo} alt="image-effect" />
+        <img src={ulmo} alt="ulmo" />
       </div>
     </div>
   );

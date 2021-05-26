@@ -10,7 +10,7 @@ export function ThreeCirclesButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">
+        <a href="#ThreeCirclesButtonEffect">
           <span></span> Hover Me
         </a>
       </div>

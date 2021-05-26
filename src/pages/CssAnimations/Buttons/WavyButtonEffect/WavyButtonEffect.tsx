@@ -10,7 +10,7 @@ export function WavyButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">
+        <a href="#WavyButtonEffect">
           Hover Me
           <div className="wave"></div>
         </a>

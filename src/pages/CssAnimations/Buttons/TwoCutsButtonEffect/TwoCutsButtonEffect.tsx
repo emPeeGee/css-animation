@@ -10,7 +10,7 @@ export function TwoCutsButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">
+        <a href="#TwoCutsButtonEffect">
           Hover Me
           <span></span>
         </a>

@@ -10,7 +10,7 @@ export function StretchingButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">Button</a>
+        <a href="#StretchingButtonEffect">Button</a>
       </div>
     </div>
   );

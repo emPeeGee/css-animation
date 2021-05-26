@@ -18,7 +18,7 @@ function CssAnimations() {
           <nav>
             <ul>
               <li>
-                <Link to={`${url}/chapter-one`}>hapter One</Link>
+                <Link to={`${url}/chapter-one`}>Chapter One</Link>
               </li>
               <li>
                 <Link to={`${url}/buttons`}>Buttons</Link>

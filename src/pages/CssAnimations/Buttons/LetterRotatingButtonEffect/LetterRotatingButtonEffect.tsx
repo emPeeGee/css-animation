@@ -10,7 +10,7 @@ export function LetterRotatingButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="#">
+        <a href="#LetterRotatingButtonEffect">
           <span>H</span>over me
         </a>
       </div>

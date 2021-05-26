@@ -10,7 +10,7 @@ export function RotatingButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="/">Hover Me</a>
+        <a href="#RotatingButtonEffect">Hover Me</a>
       </div>
     </div>
   );

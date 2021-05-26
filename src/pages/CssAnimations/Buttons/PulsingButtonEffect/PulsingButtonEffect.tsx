@@ -10,7 +10,7 @@ export function PulsingButtonEffect() {
       </h2>
 
       <div className="container">
-        <a href="">Hover Me</a>
+        <a href="#PulsingButtonEffect">Hover Me</a>
       </div>
     </div>
   );
