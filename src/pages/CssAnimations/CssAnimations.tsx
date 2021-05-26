@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from 'react-router-dom';
 
-import { ChapterOne } from './ChapterOne/ChapterOne';
+import { Basic } from './Basic/Basic';
 import { Buttons } from './Buttons/Buttons';
 import { Vodafone } from './Vodafone/Vodafone';
 import { Images } from './Images/Images';
@@ -18,7 +18,7 @@ function CssAnimations() {
           <nav>
             <ul>
               <li>
-                <Link to={`${url}/chapter-one`}>Chapter One</Link>
+                <Link to={`${url}/basic`}>Basic transform and transitions</Link>
               </li>
               <li>
                 <Link to={`${url}/buttons`}>Buttons</Link>
@@ -33,8 +33,8 @@ function CssAnimations() {
           </nav>
 
           <Switch>
-            <Route path={`${path}/chapter-one`}>
-              <ChapterOne />
+            <Route path={`${path}/basic`}>
+              <Basic />
             </Route>
             <Route path={`${path}/buttons`}>
               <Buttons />

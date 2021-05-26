@@ -4,9 +4,9 @@ import { Transform } from './Transform/Transform';
 import { TransitionOptions } from './TransitionOptions/TransitionOptions';
 import { WhatIsTransition } from './WhatIsTransition/WhatIsTransition';
 
-export function ChapterOne() {
+export function Basic() {
   return (
-    <div className="ChapterOne">
+    <div className="Basic">
       <h1>Chapter One</h1>
       <WhatIsTransition />
       <TransitionOptions />
