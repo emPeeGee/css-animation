@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ulmo from '../../../assets/ulmo.jpg';
+import ulmo from '../../../../assets/ulmo.jpg';
 
 import './HideRotatingImageEffect.scss';
 

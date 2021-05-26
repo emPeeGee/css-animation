@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from 'react-router-dom';
 
-import { ChapterOne } from '../../components/ChapterOne/ChapterOne';
-import { Buttons } from '../../components/Buttons/Buttons';
-import { Vodafone } from '../../components/Vodafone/Vodafone';
-import { Images } from '../../components/Images/Images';
+import { ChapterOne } from './ChapterOne/ChapterOne';
+import { Buttons } from './Buttons/Buttons';
+import { Vodafone } from './Vodafone/Vodafone';
+import { Images } from './Images/Images';
 
 // import './CssAnimations.scss';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import lotr from '../../../assets/lotr.png';
+import lotr from '../../../../assets/lotr.png';
 
 import './TwoLayersSwipeImageEffect.scss';
 

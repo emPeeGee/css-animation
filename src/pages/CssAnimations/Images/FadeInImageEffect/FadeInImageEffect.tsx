@@ -1,15 +1,15 @@
 import React from 'react';
 
-import ulmo from '../../../assets/ulmo.jpg';
+import ulmo from '../../../../assets/ulmo.jpg';
 
-import './FadeInSecondImageEffect.scss';
+import './FadeInImageEffect.scss';
 
-export function FadeInSecondImageEffect() {
+export function FadeInImageEffect() {
   return (
-    <div className="FadeInSecondImageEffect">
+    <div className="FadeInImageEffect">
       <div className="container">
         <img src={ulmo} alt="image-effect" />
-        <div className="FadeInSecondImageEffect__caption">
+        <div className="FadeInImageEffect__caption">
           <h3>Amazing caption</h3>
           <p>Write anything you want</p>
           <a href="">Read More</a>
