@@ -28,12 +28,6 @@ function App() {
               <li>
                 <Link to="/js">Js Animations</Link>
               </li>
-              <li>
-                <Link to="/menus">Menus</Link>
-              </li>
-              <li>
-                <Link to="/cards">Cards</Link>
-              </li>
             </ul>
           </nav>
 

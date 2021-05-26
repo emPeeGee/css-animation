@@ -5,6 +5,8 @@ import { Basic } from './Basic/Basic';
 import { Buttons } from './Buttons/Buttons';
 import { Vodafone } from './Vodafone/Vodafone';
 import { Images } from './Images/Images';
+import { Menus } from './Menus/Menus';
+import { Cards } from './Cards/Cards';
 
 // import './CssAnimations.scss';
 
@@ -29,22 +31,22 @@ function CssAnimations() {
               <li>
                 <Link to={`${url}/images`}>Images</Link>
               </li>
+              <li>
+                <Link to={`${url}/menus`}>Menus</Link>
+              </li>
+              <li>
+                <Link to={`${url}/cards`}>Cards</Link>
+              </li>
             </ul>
           </nav>
 
           <Switch>
-            <Route path={`${path}/basic`}>
-              <Basic />
-            </Route>
-            <Route path={`${path}/buttons`}>
-              <Buttons />
-            </Route>
-            <Route path={`${path}/vodafone`}>
-              <Vodafone />
-            </Route>
-            <Route path={`${path}/images`}>
-              <Images />
-            </Route>
+            <Route path={`${path}/basic`} component={Basic} />
+            <Route path={`${path}/buttons`} component={Buttons} />
+            <Route path={`${path}/vodafone`} component={Vodafone} />
+            <Route path={`${path}/images`} component={Images} />
+            <Route path={`${path}/menus`} component={Menus} />
+            <Route path={`${path}/cards`} component={Cards} />
           </Switch>
         </div>
       </Router>
