@@ -17,7 +17,7 @@ function GsapAnimations() {
                 <Link to={`${url}/scroll-trigger-basic`}>Scroll Trigger Basic Animation</Link>
               </li>
               <li>
-                <Link to={`${url}/scroll-trigger-basic`}>Scroll Trigger Basic Animation</Link>
+                <Link to={`${url}/landing-page`}>Landing Page</Link>
               </li>
               <li>
                 <Link to={`${url}/scroll-trigger-basic`}>Scroll Trigger Basic Animation</Link>
@@ -27,6 +27,7 @@ function GsapAnimations() {
 
           <Switch>
             <Route path={`${path}/scroll-trigger-basic`} component={ScrollTriggerBasic} />
+            <Route path={`${path}/landing-page`} component={ScrollTriggerBasic} />
           </Switch>
         </div>
       </Router>
