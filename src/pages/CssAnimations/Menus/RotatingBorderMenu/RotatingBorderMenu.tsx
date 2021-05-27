@@ -4,7 +4,7 @@ import './RotatingBorderMenu.scss';
 
 export function RotatingBorderMenu() {
   return (
-    <div className="RotatingBorderMenu">
+    <div id="RotatingBorderMenu" className="RotatingBorderMenu">
       <div className="container">
         <ul>
           <li>

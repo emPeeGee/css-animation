@@ -4,7 +4,7 @@ import './BackgroundTwoBordersMenu.scss';
 
 export function BackgroundTwoBordersMenu() {
   return (
-    <div className="BackgroundTwoBordersMenu">
+    <div id="BackgroundTwoBordersMenu" className="BackgroundTwoBordersMenu">
       <div className="container">
         <ul>
           <li>

@@ -4,23 +4,23 @@ import './GrowingBordersMenu.scss';
 
 export function GrowingBordersMenu() {
   return (
-    <div className="GrowingBordersMenu">
+    <div id="GrowingBordersMenu" className="GrowingBordersMenu">
       <div className="container">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#GrowingBordersMenu">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#GrowingBordersMenu">About</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#GrowingBordersMenu">Services</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a href="#GrowingBordersMenu">Portfolio</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#GrowingBordersMenu">Contact</a>
           </li>
         </ul>
       </div>

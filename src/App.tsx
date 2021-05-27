@@ -4,15 +4,15 @@ import { gsap } from 'gsap';
 import { CSSRulePlugin } from 'gsap/CSSRulePlugin';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import CssAnimations from './pages/CssAnimations/CssAnimations';
 import { Home } from './pages/Home/Home';
-import JsAnimations from './pages/JsAnimations/JsAnimations';
+import { CssAnimations } from './pages/CssAnimations/CssAnimations';
+import { JsAnimations } from './pages/JsAnimations/JsAnimations';
 
 import './App.scss';
 
 gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
 
-function App() {
+export function App() {
   return (
     <div className="App">
       <Router>
@@ -41,5 +41,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

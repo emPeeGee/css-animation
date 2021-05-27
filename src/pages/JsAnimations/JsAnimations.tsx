@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from 'react-router-dom';
-import GsapAnimations from './GsapAnimations/GsapAnimations';
+import { GsapAnimations } from './GsapAnimations/GsapAnimations';
 
 // import './JsAnimations.scss';
 
-function JsAnimations() {
+export function JsAnimations() {
   const { path, url } = useRouteMatch();
 
   return (
@@ -27,5 +27,3 @@ function JsAnimations() {
     </div>
   );
 }
-
-export default JsAnimations;

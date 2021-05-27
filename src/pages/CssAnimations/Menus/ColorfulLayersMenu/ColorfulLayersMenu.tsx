@@ -4,7 +4,7 @@ import './ColorfulLayersMenu.scss';
 
 export function ColorfulLayersMenu() {
   return (
-    <div className="ColorfulLayersMenu">
+    <div id="ColorfulLayersMenu" className="ColorfulLayersMenu">
       <div className="container">
         <ul>
           <li>

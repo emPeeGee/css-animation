@@ -10,7 +10,7 @@ import { Cards } from './Cards/Cards';
 
 // import './CssAnimations.scss';
 
-function CssAnimations() {
+export function CssAnimations(): JSX.Element {
   const { path, url } = useRouteMatch();
 
   return (
@@ -53,5 +53,3 @@ function CssAnimations() {
     </div>
   );
 }
-
-export default CssAnimations;

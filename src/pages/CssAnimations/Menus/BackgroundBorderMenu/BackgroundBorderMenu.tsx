@@ -4,7 +4,7 @@ import './BackgroundBorderMenu.scss';
 
 export function BackgroundBorderMenu() {
   return (
-    <div className="BackgroundBorderMenu">
+    <div id="BackgroundBorderMenu" className="BackgroundBorderMenu">
       <div className="container">
         <ul>
           <li>

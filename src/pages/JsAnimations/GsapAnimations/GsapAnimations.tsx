@@ -4,7 +4,7 @@ import { ScrollTriggerBasic } from './ScrollTriggerBasic/ScrollTriggerBasic';
 
 // import './GsapAnimations.scss';
 
-function GsapAnimations() {
+export function GsapAnimations() {
   const { path, url } = useRouteMatch();
 
   return (
@@ -34,5 +34,3 @@ function GsapAnimations() {
     </div>
   );
 }
-
-export default GsapAnimations;
